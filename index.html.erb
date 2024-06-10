@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Home Style</h1>
+      <span>Івано-Франківськ</span>
+    </div>
+    <div class="header-center">
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Акції</a></li>
+          <li><a href="#">Оплата і доставка</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <nav class="user-nav">
+        <ul>
+          <li><a href="#">Реєстрація</a></li>
+          <li><a href="#">Корзина</a></li>
+          <li>
+            <select>
+              <option value="uk">Укр</option>
+              <option value="en">Англ</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <aside>
+      <ul class="catalog-nav">
+        <li><a href="#">Каталог товарів</a></li>
+        <li><a href="#">Розпродаж</a></li>
+        <li><a href="#">Дивани і крісла</a></li>
+        <li><a href="#">Шафи та гардироби</a></li>
+        <li><a href="#">Ліжка</a></li>
+        <li><a href="#">Матраци</a></li>
+      </ul>
+    </aside>
+      </div>
+    </section>
+    <section class="products">
+    </aside>
+    <section class="products">
+      <h2>Новинки</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <%= image_tag 'product1.jpg', alt: 'Product 1' %>
+          <h3>Кутовий диван Alonzo</h3>
+          
+          <span class="price">1000 грн</span>
+          <button class="add-to-cart">Додати в кошик</button>
+        </div>
+        <div class="product-item">
+          <%= image_tag 'product2.jpg', alt: 'Product 2' %>
+          <h3>ТУМБА BW402</h3>
+          
+          <span class="price">2000 грн</span>
+          <button class="add-to-cart">Додати в кошик</button>
+        </div>
+        <div class="product-item">
+          <%= image_tag 'product3.jpg', alt: 'Product 3' %>
+          <h3>Ліжко Vetro Вільха</h3>
+          
+          <span class="price">3000 грн</span>
+          <button class="add-to-cart">Додати в кошик</button>
+        </div>
+        <div class="product-item">
+          <%= image_tag 'product4.jpg', alt: 'Product 4' %>
+          <h3>Тумба приліжкова Merini4</h3>
+         
+          <span class="price">2690 грн</span>
+          <button class="add-to-cart">Додати в кошик</button>
+        </div>
+      </div>
+
+      <!-- Популярні товари -->
+      <h2>Готові наші вироби </h2>
+      <div class="popular-products">
+        <div class="product-item">
+          <%= image_tag 'popular2.jpg', alt: 'Popular Product 2' %>
+          <h3>Спальня “Вівіан” 2</h3>
+          <p>Фасад: ДСП – артвуд світлий/індастріал
+
+          Корпус: ДСП – артвуд світлий 2</p>
+          <span class="price"> 22096 грн</span>
+          <button class="add-to-cart">Детальніше</button>
+        </div>
+        <div class="product-item">
+          <%= image_tag 'popular3.jpg', alt: 'Popular Product 3' %>
+          <h3>Вітальня "Лего"” 3</h3>
+          <p>Фасад: ДСП – німфея альба (лак)
+
+          Корпус: ДСП – морське дерево вінтаж/німфея альба 3</p>
+          <span class="price">7000 грн</span>
+          <button class="add-to-cart">Детальніше</button>
+        </div>
+        <div class="product-item">
+          <%= image_tag 'popular4.jpg', alt: 'Popular Product 4' %>
+          <h3>Прихожа “Ріо”</h3>
+          <p>Фасад: ДСП – аляска/антрацит
+
+          Корпус: ДСП – аляска
+          
+          Матеріал м’якої частини – еко-шкіра 4</p>
+          <span class="price">8000 грн</span>
+          <button class="add-to-cart">Детальніше</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-left">
+      <h1>Home Style</h1>
+      <p>Магазин домашнього затишку</p>
+  </div>
+  <div class="footer-center">
+      <h2>Контакти</h2>
+      <p>Телефон: +380123456789</p>
+      <p>Email: info@homestyle.com</p>
+  </div>
+  <div class="footer-right">
+      <h2>Слідкуйте за нами</h2>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Telegram</a>
+      <a href="#">Viber</a>
+  </div>
+</footer>

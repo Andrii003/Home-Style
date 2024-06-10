@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Загальні стилі для шапки */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #55090f; /* Фіолетовий колір */
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* Стилі для лівої частини шапки */
+.header-left h1 {
+  margin: 0;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+}
+
+.header-left span {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Стилі для правої частини шапки */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-nav select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Стилі для навігаційних меню */
+.header-nav ul,
+.user-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header-nav ul li,
+.user-nav ul li {
+  margin-right: 15px;
+}
+
+.header-nav ul li a,
+.user-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s; /* Додати анімацію */
+}
+
+.header-nav ul li a:hover,
+.user-nav ul li a:hover {
+  color: #ffcc00; /* Змінити колір тексту на жовтий */
+}
+
+
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 200px;
+}
+.catalog-nav {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px; /* Збільшений шрифт для каталогу */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.catalog-nav li {
+  margin-bottom: 10px;
+}
+
+.catalog-nav li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.catalog-nav li a:hover {
+  background-color: #800080;
+  color: #fff;
+}
+.products {
+  padding: 20px;
+}
+
+.products h2 {
+  margin-top: 0;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-item h3 {
+  margin: 10px 0;
+}
+
+.product-item p {
+  margin: 10px 0;
+}
+
+.product-item .price {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #ff4500;
+}
+
+.product-item .add-to-cart {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.footer-left h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-center,
+.footer-right {
+  text-align: center;
+}
+
+.footer-center h2,
+.footer-right h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.footer-right a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a:last-child {
+  margin-right: 0;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
